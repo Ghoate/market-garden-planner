@@ -38,3 +38,5 @@ export function tagColor(tag) {
   var idx = Math.abs(tag.split("").reduce(function(a,c){return a+c.charCodeAt(0);},0)) % TAG_PALETTE.length;
   return TAG_PALETTE[idx];
 }
+
+export var inp = { background: COLORS.bark, border: "1px solid " + COLORS.clay, borderRadius: 4, color: COLORS.cream, fontFamily: "'DM Mono', monospace", fontSize: 13, padding: "5px 8px", outline: "none", width: "100%", boxSizing: "border-box" };
